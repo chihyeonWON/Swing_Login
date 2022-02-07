@@ -1,4 +1,4 @@
 
-public class Frame {
+public class 	 {
 	main
 }
