@@ -56,6 +56,8 @@ public class Frame {
 		frame.setSize(840, 840/12*9); //프로그램 기본사이즈 설정
 	}
 }
+```
+
 setPreferredSize안에 가로,세로의 형식으로 넣을 수 있도록 Dimension 클래스를 새로운 생성자로 호출해서 사이즈를 설정합니다.   
    
 setSize 메서드로 자세한 크기를 가로,세로 형식으로 설정합니다.
