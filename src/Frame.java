@@ -33,7 +33,7 @@ public class Frame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				textArea.append("You are amazing\n");
+				label.setText(textArea.getText());
 			}
 			
 		});
