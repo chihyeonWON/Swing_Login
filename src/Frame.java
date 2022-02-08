@@ -38,6 +38,15 @@ public class Frame {
 			
 		});
 		
+		btn2.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+				
+			}
+			
+		});
 		frame.add(panel); // 프레임에 패널을 넣어줌
 
 		frame.setResizable(false); // 프로그램 사이즈 변경 금지
