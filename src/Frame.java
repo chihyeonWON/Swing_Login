@@ -17,9 +17,10 @@ public class Frame {
 		JTextArea textArea = new JTextArea();
 		JTextField textField = new JTextField(200); // 200±ÛÀÚ
 		JPanel btnPanel = new JPanel();
-		
+
 		panel.setLayout(new BorderLayout());
 		
+		btnPanel.add(btn1);
 		panel.add(label, BorderLayout.NORTH);
 		panel.add(btnPanel, BorderLayout.WEST);
 		panel.add(textArea, BorderLayout.CENTER);
