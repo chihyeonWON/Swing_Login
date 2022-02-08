@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 public class Frame {
 	public static void main(String[] args) {
@@ -14,6 +15,7 @@ public class Frame {
 		JLabel label = new JLabel("Some text");
 		JButton btn1 = new JButton("Click me");
 		JTextArea textArea = new JTextArea();
+		JTextField textField = new JTextField(200); // 200±ÛÀÚ
 		
 		panel.setLayout(new BorderLayout());
 		
