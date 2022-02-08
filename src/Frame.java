@@ -14,6 +14,7 @@ public class Frame {
 		JPanel panel = new JPanel();
 		JLabel label = new JLabel("Some text");
 		JButton btn1 = new JButton("Click me");
+		JButton btn2 = new JButton("Exit");
 		JTextArea textArea = new JTextArea();
 		JTextField textField = new JTextField(200); // 200±ÛÀÚ
 		JPanel btnPanel = new JPanel();
@@ -21,6 +22,7 @@ public class Frame {
 		panel.setLayout(new BorderLayout());
 		
 		btnPanel.add(btn1);
+		btnPanel.add(btn2);
 		panel.add(label, BorderLayout.NORTH);
 		panel.add(btnPanel, BorderLayout.WEST);
 		panel.add(textArea, BorderLayout.CENTER);
