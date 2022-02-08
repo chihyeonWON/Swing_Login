@@ -16,11 +16,12 @@ public class Frame {
 		JButton btn1 = new JButton("Click me");
 		JTextArea textArea = new JTextArea();
 		JTextField textField = new JTextField(200); // 200글자
+		JPanel btnPanel = new JPanel();
 		
 		panel.setLayout(new BorderLayout());
 		
 		panel.add(label, BorderLayout.NORTH);
-		panel.add(btn1, BorderLayout.WEST);
+		panel.add(btnPanel, BorderLayout.WEST);
 		panel.add(textArea, BorderLayout.CENTER);
 		
 		frame.add(panel); // 프레임에 패널을 넣어줌
