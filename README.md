@@ -170,3 +170,50 @@ panel.add(textArea, BorderLayout.CENTER)
 ```
 텍스트에이리어를 가운데 배치했습니다.
 
+## 버튼패널 생성하고 그 안에 버튼들을 넣기
+
+버튼들이 들어있는 패널 하나를 생성하고 기존에 만든 버튼을 넣어보겠습니다.
+```Java
+JButton btn1 = new JButton();
+JPanel btnPanel = new JPanel();
+
+btnPanel.add(btn1);
+panel.add(btnPanel, BorderLayout.WEST);
+```
+## 새로운 버튼을 생성하고 버튼패널에 넣기
+
+프로그램을 종료하는 기능을 하는 버튼을 새로 만들고 버튼패널에 넣어보겠습니다.
+```Java
+JButton btn2 = new JButton("Exit");
+
+btnPanel.add(btn2);
+```
+
+## 버튼에 각종 기능 넣기
+
+버튼에 기능을 넣는 방법으로는 addActionListener를 사용하는 방법이 있습니다.
+```Java
+btn1.addActionListener(new ActionListener(){
+	public void actionPerformed(ActionEvent e) {
+		textArea.append("You are amazing");
+	}
+});
+```
+먼저 btn1에 클릭했을 때 textArea에 You are amazing 글자가 추가되도록 기능을 추가했습니다.
+   
+마찬가지로 btn2에는 클릭했을 때 프로그램이 종료되도록하는 기능을 추가했습니다.
+```Java
+btn2.addActionListener(new ActionListener(){
+	public void actionPerformed(ActionEvent e) {
+		System.exit(0);
+	}
+});
+```
+
+btn1을 클릭했을 때 textArea의 쓴 글자를 받아서 label 추가되록 기능을 추가해보겠습니다.
+```Java
+btn1.addActionListener(new ActionListener(){
+	public void actionPerformed(ActionEvent e) {
+		label.setText(textArea.getText());
+	}
+});
