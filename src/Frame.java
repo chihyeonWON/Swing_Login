@@ -1,5 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -26,6 +28,15 @@ public class Frame {
 		panel.add(label, BorderLayout.NORTH);
 		panel.add(btnPanel, BorderLayout.WEST);
 		panel.add(textArea, BorderLayout.CENTER);
+		
+		btn1.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textArea.append("You are amazing\n");
+			}
+			
+		});
 		
 		frame.add(panel); // 프레임에 패널을 넣어줌
 
