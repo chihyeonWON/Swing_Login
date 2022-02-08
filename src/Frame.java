@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
@@ -10,6 +11,9 @@ public class Frame {
 		JPanel panel = new JPanel();
 		JLabel label = new JLabel("Some text");
 		
+		panel.setLayout(new BorderLayout());
+		
+		panel.add(label, BorderLayout.NORTH);
 		
 		frame.add(panel); // 프레임에 패널을 넣어줌
 
