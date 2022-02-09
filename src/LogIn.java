@@ -7,6 +7,7 @@ public class LogIn extends JFrame {
 		setLocationRelativeTo(null);
 		setResizable(false); // 사이즈변경금지
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 	}
 	
 	public static void main(String[] args) {
