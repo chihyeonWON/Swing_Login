@@ -1,6 +1,10 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -19,6 +23,23 @@ public class LogIn extends JFrame {
 		panel.add(pswrd);
 		panel.add(txtPass);
 		panel.add(logBtn);
+		
+		logBtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String id = "Dan";
+				String pass = "1234";
+				
+				if(id.equals(txtID.getText()) && pass.equals(txtPass.getText())) {
+					JOptionPane.showMessageDialog(null, "You have logged in successfully"); //로그인성공
+				} else {
+					JOptionPane.showMessageDialog(null, "You failed to log in"); //로그인실패
+				}
+				
+			}
+			
+		});
 		add(panel);
 		
 		setVisible(true); // 화면에 표시
