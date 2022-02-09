@@ -1,17 +1,20 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 public class LogIn extends JFrame {
 	public LogIn() {
 		JPanel panel = new JPanel(); // ID,PW 패널
 		JLabel label = new JLabel("ID : "); // ID 라벨
+		JLabel pswrd = new JLabel("Password : "); // PW 라벨
 		JTextField txtID = new JTextField(10); //ID 입력창
-		
+		JPasswordField txtPass = new JPasswordField(10); // PW 입력창
 		panel.add(label);
 		panel.add(txtID);
-		
+		panel.add(pswrd);
+		panel.add(txtPass);
 		add(panel);
 		
 		setVisible(true); // 화면에 표시
