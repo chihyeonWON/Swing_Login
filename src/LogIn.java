@@ -1,3 +1,4 @@
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -11,10 +12,13 @@ public class LogIn extends JFrame {
 		JLabel pswrd = new JLabel("Password : "); // PW 라벨
 		JTextField txtID = new JTextField(10); //ID 입력창
 		JPasswordField txtPass = new JPasswordField(10); // PW 입력창
+		JButton logBtn = new JButton("Log In");
+		
 		panel.add(label);
 		panel.add(txtID);
 		panel.add(pswrd);
 		panel.add(txtPass);
+		panel.add(logBtn);
 		add(panel);
 		
 		setVisible(true); // 화면에 표시
